@@ -24,6 +24,6 @@ RUN cd /tmp/pdns-recursor-$POWERDNS_RECURSOR_VERSION && \
 ADD recursor.conf /etc/pdns/
 ADD entrypoint.sh /
 
-EXPOSE 5300/tcp 5300/udp
+EXPOSE 53/tcp 53/udp
 
 ENTRYPOINT ["/entrypoint.sh"]
